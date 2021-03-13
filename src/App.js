@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBell, faHistory } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
-  const categories = ['Red', 'white', 'Rose', 'Sparkling', 'Dessert'];
+  //const categories = ['Red', 'white', 'Rose', 'Sparkling', 'Dessert'];
   const products = [
     {
       name: 'Casa Castillo Monastrell',
@@ -92,9 +92,11 @@ function App() {
           </div>
 
           <div className="categories">
-            {categories.map((category) => (
-              <CategoryButton ative>{category}</CategoryButton>
-            ))}
+            <CategoryButton primary>Red</CategoryButton>
+            <CategoryButton>White</CategoryButton>
+            <CategoryButton>Rose</CategoryButton>
+            <CategoryButton>Sparkling</CategoryButton>
+            <CategoryButton>Dessert</CategoryButton>
           </div>
 
           <div className="products">

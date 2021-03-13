@@ -19,20 +19,20 @@ export const Button = styled.button`
 `;
 
 export const CategoryButton = styled.button`
-  width: 100px;
+  width: 80px;
   heigth: 35px;
-  padding: 0.7rem;
+  padding: 0.5rem;
+  margin-right: 15px;
   border-radius: 20px;
   border: none;
-  color: #ee6e7a;
-  background-color: #f9f9f9;
-  box-shadow: -4px 6px 41px -15px rgba(0, 0, 0, 0.9);
-  ${(props) =>
-    props.active &&
-    css`
-      background: palevioletred;
-      color: white;
-    `}
+  color: ${(props) => (props.primary ? '#f9f9f9' : '#ee6e7a')};
+  background-color: ${(props) => (props.primary ? '#ee6e7a' : '#f9f9f9')};
+  box-shadow: -4px 6px 41px -14px rgba(0, 0, 0, 0.9);
+  &:hover {
+    transition: 1s;
+    color: #f9f9f9;
+    background-color: #ee6e7a;
+  }
 `;
 
 export const Card = styled.div`

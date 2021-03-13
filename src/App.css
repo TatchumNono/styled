@@ -84,12 +84,9 @@ nav {
 }
 
 .categories {
-  display: flex;
-  align-items: flex-start;
   padding-top: 2rem;
   width: 90%;
-  height: 90px;
-  justify-content: space-around;
+  height: 80px;
 }
 
 .container {
